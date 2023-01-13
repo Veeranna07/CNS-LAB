@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
-public class CaesarCipher {
-	public static void main(String[] args) {
+public class CaesarCipher
+{
+	public static void main(String[] args)
+	{
 		Scanner sc=new Scanner(System.in);
 		System.out.print("Enter Message : ");
 		String ms=sc.nextLine();
@@ -19,7 +21,8 @@ public class CaesarCipher {
 			{
 				EM.append((char)('A'+(c-'A'+shift)%26));
 			}
-			else {
+			else
+			{
 				EM.append(c);
 			}
 		}
@@ -27,3 +30,9 @@ public class CaesarCipher {
 		sc.close();
 	}
 }
+
+/*
+	Enter Message : HELLO WORLD
+	Enter Shift value(1-26) : 3
+	Encrypted Message : KHOOR ZRUOG
+ */
