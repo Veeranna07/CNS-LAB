@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
-public class SubstitutionCipher {
+public class SubstitutionCipher
+{
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
@@ -19,7 +20,8 @@ public class SubstitutionCipher {
         key = key.toLowerCase();
         StringBuilder encoded = new StringBuilder();
 
-        for (int i = 0; i < ms.length(); i++) {
+        for (int i = 0; i < ms.length(); i++)
+        {
             char c = ms.charAt(i);
             if (c >= 'a' && c <= 'z')
             {
