@@ -7,8 +7,10 @@ import javax.crypto.spec.DESKeySpec;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 
-public class DES {
-    public static void main(String[] args) throws Exception {
+public class DES
+{
+    public static void main(String[] args) throws Exception
+    {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Enter plaintext: ");
         String plainText = br.readLine();
