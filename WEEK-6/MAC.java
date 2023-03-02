@@ -2,11 +2,13 @@ import java.security.Key;
 import java.security.SecureRandom;
 import javax.crypto.KeyGenerator;
 import javax.crypto.Mac;
+import java.util.Scanner;
 
 public class MAC
 {
 	public static void main(String[] args) throws Exception
 	{
+		Scanner sc=new Scanner(System.in);
 		KeyGenerator keyGen=KeyGenerator.getInstance("DES");
 		SecureRandom secRandom=new SecureRandom();
 		keyGen.init(secRandom);
@@ -14,14 +16,17 @@ public class MAC
 		Mac mac=Mac.getInstance("HmacSHA256");
 		mac.init(key);
 		
-		String msg=new String("Hi how are you?");
+		System.out.print("Enter Message : ");
+		String msg=sc.nextLine();
 		byte[] bytes=msg.getBytes();
 		byte[] macResult=mac.doFinal(bytes);
 		
-		System.out.println("Mac result for "+msg+":"+new String(macResult));
+		System.out.println("Mac result for "+msg+" :"+new String(macResult));
+		sc.close();
 	}
 }
 
 /*
-Mac result for Hi how are you?:˜÷ÏÞÊãz&W¤ùhxè„VÌÍ¡nUxKÝÖ©e!&
+Enter Message : hello world
+Mac result for hello world :Ã…Ã‹*hÃ”â€ºÃ¨%Ã›Ëœâ€™;Â¢Â£ÂªÃ–u5Ys;Ã™{Ã¶m
  */
