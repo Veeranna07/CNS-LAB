@@ -47,7 +47,8 @@ public class EllipticCurve
 }
 
 /*
-
+   OUTPUT
+=============
 	Enter prime p:23
 	Enter coefficient a:1
 	Enter coefficient b:1
