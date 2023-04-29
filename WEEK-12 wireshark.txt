@@ -1,0 +1,6 @@
+Enter the following commands in Ubuntu Terminal:
+
+1.	sudo add-apt-repository ppa:wireshark-dev/stable
+2.	sudo apt update
+3.	sudo apt install wireshark
+4.	sudo wireshark
