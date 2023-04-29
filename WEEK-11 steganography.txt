@@ -1,0 +1,6 @@
+Enter the following commands in Ubuntu Terminal:
+
+1.	sudo apt-get update
+2.	sudo apt-get install steghide
+3.	steghide embed -cf pic.jpeg -ef secret.txt
+4.	steghide extract -sf pic.jpeg
