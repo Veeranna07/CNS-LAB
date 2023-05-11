@@ -5,10 +5,15 @@ Open Terminal in Ubuntu and enter the following commands:
 3.	sudo apt autoremove
 4.	gpg --gen-key
 5.	gpg --output revoke.asc --gen-revoke Veeranna	
+
+// Encryption
 6.	gpg --output doc.gpg --encrypt --recipient 20r11a6607@gcet.edu.in abc.txt
 7.	gedit doc.gpg
+
+// Decryption
 8.	gpg --output aiml07.txt --decrypt doc.gpg
-9.	ls aiml07.txt
-10.	gedit aiml07.txt
-11.	gpg --output doc.sig --sign aiml07.txt
-12.	gedit doc.sig
+9.	gedit aiml07.txt
+
+// Digital Signature
+10.	gpg --output doc.sig --sign aiml07.txt
+11.	gedit doc.sig
