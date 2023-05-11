@@ -1,11 +1,10 @@
 Enter the following commands in Ubuntu Terminal:
 1.	sudo apt-get update
-2.	sudo apt-get install namp
+2.	sudo apt-get install nmap
 
   Find IP address of the System
   Go to wired connections
   Click on Networks
   Copy the IP address from Settings Tab
   
-3.	namp --script vuln -sV 192.168.17.16
-
+3.	nmap --script vuln -sV 192.168.17.16
